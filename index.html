@@ -6,29 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Intended to simulate travel website of fictional client request" />
   <title>Horizon | agência de viagens</title>
+
+  <!-- Styles -->
+
   <link rel="stylesheet" href="./style/style.css">
   <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/side-bar.css">
+
+  <!-- Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
 </head>
 
-<body>
+<body> 
 
-  <nav class="side-bar">
-    <div class="d-flex flex-row justify-content-between text-10 image-text">
-      <span class="image">
-        <img src="./fig/decolar-logo-2019.svg" alt="">
-      </span>
-
-      <div>
-        <h4 class="text-primary horizon">Horizon</h4>
-      </div>
+  <nav class="side-bar shadow close open" id="nav-bar-click">
+    <div class="d-flex align-items-center border-bottom pb-3 mb-3">
+      <img src="./fig/decolar-logo-2019.svg" class="image" alt="Logo">
+      <h4 class="title mb-0 ms-3 fs-4 top-50 text-primary">Horizon</h4>
     </div>
-    <div class="py-3 text-10 header-text">
-      <span class="name">Site clone da decolar</span>
+
+    <div class="py-2 mb-3 bg-light rounded px-2">
+      <span class="warning small">
+        Cópia educacional <strong style="color:#550fed;">decolar</strong>
+      </span>
+    </div>
+
+    <div>
+      <i class='bx bx-chevron-right toggle'></i>
+    </div>
+
+    <div class="menu-bar">
+      <ul class="menu-links">
+        <li class="nav-link bg-light">
+          <i class="bx bx-search icon"></i>
+          <input id="search" type="search" placeholder="Pesquise aqui."
+            class="menu-search form-control form-control-sm border-0">
+        </li>
+
+        <li>
+          <a href="#" class="nav-link">
+            <i class='bx bx-home-alt icon'></i>
+            <span class="text nav-text">Buscador</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class='bx bx-briefcase icon'></i>
+            <span class="text nav-text">Minhas Viagens</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <i class='bx bxs-business icon'></i>
+            <span class="text nav-text">Sobre nós</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="bottom-content">
+        <li>
+          <a href="#" class="nav-link">
+            <i class='bx bx-log-out icon'></i>
+            <span class="text nav-text">Sair</span>
+          </a>
+        </li>
+        <li class="mode">
+          <div class="moon-sun">
+            <i class="bx bx-moon icon moon"></i>
+            <i class="bx bx-sun icon sun"></i>
+          </div>
+
+          <span class="mode-text text">Modo Escuro</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
+      </div>
     </div>
   </nav>
 
@@ -37,7 +97,7 @@
       <a class="header-logo navbar-brand fw-bold text-primary fs-3 me-4" href="#">Horizon</a>
       <div class="d-flex flex-row justify-content-center align-items-center me-3">
         <div class="televendas-box d-flex justify-content-center align-items-center px-4 py-4 text-white">
-          <small>Televendas <strong>0800 883 6342</strong></small>
+          <small class="text">Televendas <strong>0800 883 6342</strong></small>
         </div>
 
         <div
@@ -49,7 +109,7 @@
                 <path
                   d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
               </svg>
-              <span>Anuncie sua propriedade</span>
+              <span class="text">Anuncie sua propriedade</span>
             </a>
           </div>
 
@@ -62,7 +122,7 @@
                 <path
                   d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
               </svg>
-              <span>Ajuda</span>
+              <span class="text">Ajuda</span>
             </a>
           </div>
 
@@ -74,7 +134,7 @@
                 <path
                   d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z" />
               </svg>
-              <span>Minhas viagens</span>
+              <span class="text">Minhas viagens</span>
             </a>
           </div>
 
@@ -88,7 +148,7 @@
                 <path
                   d="M3.232 1.776A1.5 1.5 0 0 0 2 3.252v10.95c0 .445.191.838.49 1.11.367.422.908.688 1.51.688h8a2 2 0 0 0 2-2V4a2 2 0 0 0-1-1.732v-.47A1.5 1.5 0 0 0 11.232.321l-8 1.454ZM4 3h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1" />
               </svg>
-              <span>Benefícios Passaporte - Cupons, pontos e mais</span>
+              <span class="text">Benefícios Passaporte - Cupons, pontos e mais</span>
             </a>
           </div>
 
@@ -100,7 +160,7 @@
                 <path
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
               </svg>
-              <span class="pe-3">Carrinho</span>
+              <span class="text pe-3">Carrinho</span>
             </a>
           </div>
         </div>
@@ -112,62 +172,62 @@
 
         <li class="nav-item">
           <a class="nav-link d-flex flex-column align-items-center text-body p-0" href="#">
-            <i class="bi bi-house-door fs-4 mb-1 text-primary"></i>
+            <i class="bi bi-house-door fs-4 mb-1"></i>
             <span class="text">Hospedagens</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center text-body p-0" href="#">
-            <i class="bi bi-airplane fs-4 mb-1 text-primary"></i>
-            <span>Passagens</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-airplane fs-4 mb-1"></i>
+            <span class="text">Passagens</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center text-body p-0" href="#">
-            <i class="bi bi-box-seam fs-4 mb-1 text-primary"></i>
-            <span>Pacotes</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-box-seam fs-4 mb-1"></i>
+            <span class="text">Pacotes</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center text-body p-0" href="#">
-            <i class="bi bi-percent fs-4 mb-1 text-primary"></i>
-            <span>Descontos</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-percent fs-4 mb-1"></i>
+            <span class="text">Descontos</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center text-body p-0" href="#">
-            <i class="bi bi-check-circle fs-4 mb-1 text-primary"></i>
-            <span>Pacotes prontos</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-check-circle fs-4 mb-1"></i>
+            <span class="text">Pacotes prontos</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-item d-flex flex-column align-items-center text-body text-decoration-none p-0" href="#">
-            <i class="bi bi-ticket fs-4 mb-1 text-primary"></i>
-            <span>Passeios</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-ticket fs-4 mb-1"></i>
+            <span class="text">Passeios</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-item d-flex flex-column align-items-center text-body text-decoration-none p-0" href="#">
-            <i class="bi bi-car-front fs-4 mb-1 text-primary"></i>
-            <span>Carros</span>
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+            <i class="bi bi-car-front-fill fs-4 mb-1"></i>
+            <span class="text">Carros</span>
           </a>
         </li>
 
         <li class="nav-item">
           <a class="nav-link d-flex flex-column align-items-center text-body text-decoration-none p-2" href="#">
             <img src="./fig/mickey-mouse.png" alt="" style="padding-bottom: 8.5px;">
-            <span>Disney</span>
+            <span class="text">Disney</span>
           </a>
         </li>
     </div>
   </header>
-  <div class="hospedagens d-flex flex-column py-5 px-5 border-bottom bg-gradient">
+  <div class="hospedagens d-flex flex-column py-5 px-5 border-bottom">
     <h2>Hospedagens</h2>
     <div class="d-flex flex-row py-4">
       <button class="button-select" type="button" aria-haspopup="listbox" aria-expanded="false"
@@ -187,7 +247,7 @@
     <div></div>
   </footer>
 
-  <script></script>
+  <script src="./js/index.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

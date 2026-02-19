@@ -1,16 +1,11 @@
-
-body {
-    margin: 0;
-    padding: 0;
-    background: #E4E9F7;
-}
+@import url(./style.css);
+@import url(./side-bar.css);
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: baseline;
     height: 175px;
-    background-color: #F0F1F2;
+    background-color: var(--header-background);
 }
 
 .header-logo {
@@ -19,7 +14,7 @@ header {
 
 header .televendas-box {
     border-bottom-left-radius: 25px;
-    background-color: #1519ff;
+    background-color: var(--primary-color);
 }
 
 header .televendas-box:hover {
@@ -36,7 +31,10 @@ header .header-top-link {
 header .header-autosuggestion-links {
     height: 70px;
     padding: 5px;
-    background-color: #EEEEEE;
+    background-color: var(--primary-color-light);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: var(--primary-color-light);
 }
 
 header .header-autosuggestion-links a > svg {
@@ -49,6 +47,10 @@ header .header-bottom-link li {
     left: 20px;
     transition: 0.5s;
     opacity: 1;
+}
+
+.header-bottom-link .nav-link .text {
+    color: var(--text-color);
 }
 
 header .header-bottom-link li:active {
