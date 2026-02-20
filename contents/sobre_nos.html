@@ -24,7 +24,7 @@
 
 </head>
 
-<body id="pagina-hospedagens">
+<body id="hospedagens">
 
   <nav class="side-bar shadow close open" id="nav-bar-click">
     <div class=" d-flex align-items-center border-bottom pb-3 mb-1">
@@ -181,7 +181,8 @@
     </div>
 
     <div class="header-bottom-link d-flex align-items-baseline py-2 px-5">
-      <ul class="nav d-flex ps-1 justify-content-center gap-5">
+      <ul class="nav d-flex flex-grow-1 justify-content-center gap-5">
+
         <li class="nav-item">
           <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
             <i class="bi bi-house-door fs-4 mb-1 icon"></i>
@@ -190,7 +191,7 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="./contents/passagens.html">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
             <i class="bi bi-airplane fs-4 mb-1 icon"></i>
             <span class="text">Passagens</span>
           </a>
@@ -223,56 +224,40 @@
     <div class="container py-4">
       <div class="d-flex flex-row align-items-center gap-3">
         <h4 class="title">Hospedagens</h4>
-        <div class="btn-group" id="menu-hospedagem">
-          <input type="radio" name="servicos" id="btn-todos-servicos" checked />
-          <label for="btn-todos-servicos" class="btn-item">
-            <span>Todos</span>
-          </label>
+        <div class="btn-group navegacao">
+          <div>
+            <a href="" class="todos" id="atual">
+              <span class="select-label"></span>
+            </a>
+          </div>
+          <div>
+            <a href="" class="hoteis">
+              <i class="bi bi-building icon"></i>
+              <span></span>
+            </a>
+          </div>
+          <div class="border-end">
+            <a href="" class="alugueis-temporada">
+              <i class="bi bi-house-dash icon"></i>
+              <span></span>
+            </a>
+          </div>
+          <div class="border">
 
-          <input type="radio" name="servicos" id="btn-passagens" />
-          <label for="btn-passagens" class="btn-item">
-            <i class="bx bx-hotel"></i>
-            <span>Hotéis</span>
-          </label>
-
-          <input type="radio" name="servicos" id="btn-alugueis" />
-          <label for="btn-alugueis" class="btn-item">
-            <i class="bx bx-building-house icon"></i>
-            <span>Alugueis por temporada</span>
-          </label>
+          </div>
         </div>
       </div>
-    </div>
-
-    <div>
-
+      <div class="d-flex py-4">
+        <button class="button-select" type="button" aria-haspopup="listbox" aria-expanded="false"
+          aria-controls="select_list">
+        </button>
+      </div>
     </div>
   </div>
 
-  <main class="p-5">
-    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img src="./images/carousel_image_1.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img src="./images/Carousel_image_2.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/carousel_image_3.webp" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="./images/carousel_image_4.webp" class="d-block w-100" alt="...">
-        </div>
-      </div>
-    </div>
+  <main class="">
+    <div></div>
+    <div></div>
   </main>
 
   <footer>
@@ -288,7 +273,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
-@import url(./style.css);
-@import url(./side-bar.css);
+@import url(style.css);
+@import url(side-bar.css);
 
 header {
     display: flex;
@@ -8,13 +8,17 @@ header {
     background-color: var(--header-background);
 }
 
+header .televendas-box {
+    border-bottom-left-radius: 25px;
+    background-color: var(--primary-color);
+}
+
 .header-logo {
     padding-left: 50px;
 }
 
-header .televendas-box {
-    border-bottom-left-radius: 25px;
-    background-color: var(--primary-color);
+body.dark header .header-logo {
+    color: var(--primary-color);
 }
 
 header .televendas-box:hover {
@@ -23,21 +27,22 @@ header .televendas-box:hover {
 }
 
 header .header-top-link {   
-    width: 100%;
+    width: max-content;
     margin-top: -5px;
-    display: fixed;
+}
+
+header .header-top-link div a:hover {
+    color: var(--primary-color) !important;
 }
 
 header .header-autosuggestion-links {
     height: 70px;
     padding: 5px;
     background-color: var(--primary-color-light);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
-    color: var(--primary-color-light);
+    color: var(--primary-color);
 }
 
-header .header-autosuggestion-links a > svg {
+header .header-autosuggestion-links a > img {
     padding-right: 5px;
     padding-bottom: 5px;
 }
@@ -49,14 +54,15 @@ header .header-bottom-link li {
     opacity: 1;
 }
 
+.header-bottom-link .nav-item > .nav-link .icon,
+.header-bottom-link .nav-item > .nav-link img {
+    color: var(--text-color);
+}
+
 .header-bottom-link .nav-link .text {
     color: var(--text-color);
 }
 
 header .header-bottom-link li:active {
     background-color: transparent;
-}
-
-header .hospedagens {
-    color: #1519ff;
 }

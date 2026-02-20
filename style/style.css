@@ -1,4 +1,8 @@
+@import url(./side-bar.css);
+@import url(./header.css);
+
 :root {
+    /* Modo Claro */
     --header-background: #f8f9fa;
     --body-background: #E4E9F7;
     --side-bar-background: #fff;
@@ -6,20 +10,43 @@
     --primary-color-light: #F6F5FF;
     --toggle-color: #DDDD;
     --text-color: #707070;
+
+    /* Modo Claro - Hospedagem */
+    --hospedagem-bg: #550fed;       /* Fundo da caixa roxa */
+    --hospedagem-btn-bg: #F6F5FF;  /* Fundo do botão (Hotéis/Temporada) */
+    --hospedagem-text: #FFF;
+    --hospedagem-text-hover: #550fed;      /* Tesxto dentro do botão */
+    --hospedagem-icon-hover: #550fed;      /* Ícone dentro do botão */
 }
 
 body {
     height: 100vh;
-    overflow-y: auto;
+    padding-left: 60px;
     background-color: var(--body-background);
 }
 
 body.dark {
-    --header-background: #160900;
-    --body-color: #18191A;
-    --side-bar-background: #242526;
-    --primary-color: #550fed;
-    --primary-color-light: #3A3B3C;
-    --toggle-color: #fff;
-    --text-color: #FFF;
+
+    /* Um tom quase preto, mas com profundidade azulada */
+    --header-background: #121212; 
+    --body-background: #18191a;
+    
+    /* Superfícies (sidebar, cards) levemente mais claras que o fundo */
+    --side-bar-background: #242526; 
+    
+    /* O roxo precisa de mais brilho no modo escuro para não sumir */
+    --primary-color: #9d72ff; 
+    
+    /* Um roxo muito escuro para fundos de botões ou hover */
+    --primary-color-light: #2d1b4d; 
+    
+    --toggle-color: #3A3B3C;
+    /* Texto off-white (não 100% branco) para evitar fadiga ocular */
+    --text-color: #e4e6eb; 
+
+    /* Modo Escuro - Cores complementares */
+    --hospedagem-bg: #2d1b4d;       /* Roxo bem escuro/grafite */
+    --hospedagem-btn-bg: #3A3B3C;  /* Cinza escuro para o botão */
+    --hospedagem-text-hover: #e4e6eb;      /* Texto esbranquiçado */
+    --hospedagem-icon: #9d72ff;      /* Roxo vibrante para o ícone brilhar */
 }
