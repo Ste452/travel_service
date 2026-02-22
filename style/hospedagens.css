@@ -9,60 +9,10 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: var(--hospedagem-bg);   
-    padding: 20px;
+    background: var(--hospedagem-bg);  
     border-radius: 10px;
 }
 
-.container div .title {
+.hospedagens div .title {
     color: #FFF;
-}
-
-.btn-group input[type="radio"] {
-    display: none;
-}
-
-/* 2. Estilo base do botão (Label) - Seu estado roxo com borda branca */
-.btn-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 0 16px;
-    height: 40px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    margin: 10px;
-    background-color: var(--primary-color);
-    border: 1px solid #FFF;
-    color: #FFF;
-}
-
-.btn-item .icon, .btn-item span {
-    color: #FFF
-}
-
-/* ------------------------------------------------ */
-
-/* 3. A MÁGICA: Estilo quando o input estiver SELECIONADO (CHECKED) 
-   O seletor '+' pega o label que vem logo após o input marcado */
-.btn-group input[type="radio"]:checked + .btn-item {
-    background-color: #FFF;
-    border: 1px solid var(--primary-color);
-}
-
-.btn-group input[type="radio"]:checked + .btn-item .icon,
-.btn-group input[type="radio"]:checked + .btn-item span {
-    color: var(--primary-color) !important;
-}
-
-/* 4. Mantendo o efeito de HOVER para os não selecionados */
-.btn-item:hover {
-    background-color: #FFF;
-    opacity: 0.9; /* Um leve feedback visual */
-    color: var(--primary-color);
-}
-
-.btn-item:hover .icon, .btn-item:hover span {
-    color: var(--primary-color);
 }

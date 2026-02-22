@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./style/header.css" />
   <link rel="stylesheet" href="./style/side-bar.css" />
   <link rel="stylesheet" href="./style/hospedagens.css">
+  <link rel="stylesheet" href="./style//media.css ">
 
   <!-- Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,7 +25,7 @@
 
 </head>
 
-<body id="pagina-hospedagens">
+<body>
 
   <nav class="side-bar shadow close open" id="nav-bar-click">
     <div class=" d-flex align-items-center border-bottom pb-3 mb-1">
@@ -59,7 +60,7 @@
         <li>
           <a href="#" class="nav-link">
             <i class='bx bx-home-alt icon'></i>
-            <span class="text nav-text">Buscador</span>
+            <span class="text nav-text">Buscar hospedagens</span>
           </a>
         </li>
         <li>
@@ -69,7 +70,7 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
+          <a href="./contents/sobre_nos.html" class="nav-link">
             <i class='bx bxs-business icon'></i>
             <span class="text nav-text">Sobre nós</span>
           </a>
@@ -89,13 +90,13 @@
             <span class="text nav-text">Sair</span>
           </a>
         </li>
-        <li class="mode">
+        <li class="mode d-none">
           <div class="moon-sun">
             <i class="bx bx-moon icon moon"></i>
             <i class="bx bx-sun icon sun"></i>
           </div>
 
-          <span class="mode-text text">Modo Escuro</span>
+          <span class="mode-text text"></span>
 
           <div class="toggle-switch">
             <span class="switch"></span>
@@ -105,24 +106,23 @@
     </div>
   </nav>
 
-  <header class="border-bottom d-flex flex-column">
-    <div class="header-top-link d-none d-lg-flex justify-content-between align-items-center">
+  <header class="border-bottom w-100 d-flex flex-column">
+    <div class="header-top-link d-flex justify-content-between align-items-end">
       <a class="header-logo navbar-brand fw-bold text-primary fs-3" href="#">Horizon</a>
       <div class="d-flex flex-row justify-content-center align-items-center">
         <div class="televendas-box d-flex justify-content-center align-items-center px-4 py-4 text-white">
-          <small class="text">Televendas <strong>0800 883 6342</strong></small>
+          <small>Televendas <strong>0800 883 6342</strong></small>
         </div>
 
-        <div
-          class="header-autosuggestion-links d-flex flex-row justify-content-center align-items-center text-10 gap-1">
-          <div class="d-flex justify-content-center gap-2">
+        <div class="header-autosuggestion-links d-flex flex-row justify-content-center align-items-center text-10">
+          <div class="d-flex justify-content-center">
             <a href="#" class="text-secondary text-decoration-none small">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house"
                 viewBox="0 0 16 16">
                 <path
                   d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
               </svg>
-              <span class="text">Anuncie sua propriedade</span>
+              <span class="text text-white">Anuncie sua propriedade</span>
             </a>
           </div>
 
@@ -135,7 +135,7 @@
                 <path
                   d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94" />
               </svg>
-              <span class="text">Ajuda</span>
+              <span class="text text-white">Ajuda</span>
             </a>
           </div>
 
@@ -147,7 +147,7 @@
                 <path
                   d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z" />
               </svg>
-              <span class="text">Minhas viagens</span>
+              <span class="text text-white">Minhas viagens</span>
             </a>
           </div>
 
@@ -161,7 +161,7 @@
                 <path
                   d="M3.232 1.776A1.5 1.5 0 0 0 2 3.252v10.95c0 .445.191.838.49 1.11.367.422.908.688 1.51.688h8a2 2 0 0 0 2-2V4a2 2 0 0 0-1-1.732v-.47A1.5 1.5 0 0 0 11.232.321l-8 1.454ZM4 3h8a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1" />
               </svg>
-              <span class="text">Benefícios Passaporte - Cupons, pontos e mais</span>
+              <span class="text text-white">Benefícios Passaporte - Cupons, pontos e mais</span>
             </a>
           </div>
 
@@ -173,15 +173,15 @@
                 <path
                   d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
               </svg>
-              <span class="text pe-3">Carrinho</span>
+              <span class=" text-white pe-3">Carrinho</span>
             </a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="header-bottom-link d-flex align-items-baseline py-2 px-5">
-      <ul class="nav d-flex ps-1 justify-content-center gap-5">
+    <div class="hospedagens header-bottom-link d-none d-lg-flex d-md-flex d-sm-flex align-items-center justify-content-between mt-2 py-2 px-5">
+      <ul class="nav d-flex ps-1 align-items-center gap-5 flex-shrink-1 navbar-expand-lg">
         <li class="nav-item">
           <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
             <i class="bi bi-house-door fs-4 mb-1 icon"></i>
@@ -197,57 +197,53 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="./contents/pacotes.html">
             <i class="bi bi-box-seam fs-4 mb-1 icon"></i>
             <span class="text">Pacotes</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="./contents/passeios.html">
             <i class="bi bi-ticket fs-4 mb-1 icon"></i>
             <span class="text">Passeios</span>
           </a>
         </li>
 
-        <li class="nav-item pb-5">
-          <a class="nav-link d-flex flex-column align-items-center text-decoration-none" href="#">
-            <img class="fs-4 mb-1 icon" src="./fig/mickey-mouse-white-mode.png" alt="">
+        <li class="nav-item pt-2">
+          <a class="nav-link d-flex flex-column align-items-center text-decoration-none" href="./contents/disney.html">
+            <img class="mb-1 icon" src="./fig/mickey-mouse-white-mode.png" alt="">
             <span class="text">Disney</span>
           </a>
         </li>
-    </div>
-  </header>
+      </ul>
+      <div class="d-flex justify-content-end align-items-end py-1 border-bottom gap-3">
+        <div class="container py-4">
+          <div class="d-flex flex-row align-items-center gap-3">
+            <h4 class="title">Hospedagens</h4>
+            <div class="btn-group" id="menu-hospedagem">
+              <input type="radio" name="servicos" id="btn-todos-servicos" checked />
+              <label for="btn-todos-servicos" class="btn-item">
+                <span>Todos</span>
+              </label>
 
-  <div class="hospedagens d-flex justify-content-center align-items-center flex-column py-5 border-bottom gap-3">
-    <div class="container py-4">
-      <div class="d-flex flex-row align-items-center gap-3">
-        <h4 class="title">Hospedagens</h4>
-        <div class="btn-group" id="menu-hospedagem">
-          <input type="radio" name="servicos" id="btn-todos-servicos" checked />
-          <label for="btn-todos-servicos" class="btn-item">
-            <span>Todos</span>
-          </label>
+              <input type="radio" name="servicos" id="btn-passagens" />
+              <label for="btn-passagens" class="btn-item">
+                <i class="bx bx-hotel"></i>
+                <span>Hotéis</span>
+              </label>
 
-          <input type="radio" name="servicos" id="btn-passagens" />
-          <label for="btn-passagens" class="btn-item">
-            <i class="bx bx-hotel"></i>
-            <span>Hotéis</span>
-          </label>
-
-          <input type="radio" name="servicos" id="btn-alugueis" />
-          <label for="btn-alugueis" class="btn-item">
-            <i class="bx bx-building-house icon"></i>
-            <span>Alugueis por temporada</span>
-          </label>
+              <input type="radio" name="servicos" id="btn-alugueis" />
+              <label for="btn-alugueis" class="btn-item">
+                <i class="bx bx-building-house icon"></i>
+                <span>Alugueis por temporada</span>
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div>
-
-    </div>
-  </div>
+  </header>
 
   <main class="p-5">
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -273,11 +269,424 @@
         </div>
       </div>
     </div>
+
+    <div class="content d-flex flex-row gap-4">
+      <div class="card mt-3 ps-1" style="width: 24rem; height:10rem">
+        <a href="https://www.decolar.com/app" class="card-link text-decoration-none">
+          <div class="card-body bg-body d-flex flex-row gap-3 align-items-center">
+            <img src="./images/cell-phone.webp" alt="" class="h-25 w-25">
+            <div class="d-flex flex-column">
+              <h5 class="card-title text-body">Baixe o app</h5>
+              <p class="card-text text-2 text-body">E obtenha descontos, ferramentas exclusivos e veja primeiro as
+                melhores
+                ofertas
+                do app.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card mt-3 ps-1" style="width: 24rem; height:10rem">
+        <a href="https://www.decolar.com/app" class="card-link text-decoration-none">
+          <div class="card-body bg-body d-flex flex-row gap-3 align-items-center">
+            <img src="./images/wallet.webp" alt="" class="">
+            <div class="d-flex flex-column">
+              <h5 class="card-title text-body">Benefícios e cupons</h5>
+              <p class="card-text text-2 text-body">Acumule pontos Passaporte e aproveites todos los cupons que temos
+                para você</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="card mt-3 ps-1" style="width: 24rem; height:10rem">
+        <a href="https://www.decolar.com/app" class="card-link text-decoration-none">
+          <div class="card-body bg-body d-flex flex-row gap-3 align-items-center">
+            <img src="./images/attendant.webp" alt="" class="h-25 w-25">
+            <div class="d-flex flex-column">
+              <h5 class="card-title text-body">Meu agente Horizon</h5>
+              <p class="card-text text-2 text-body">Compre pelo telefone <b>0800-883-6342</b> ou em algum de nossos
+                canais de atenção.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <section class="w-50 mt-5">
+      <h2>Suas últimas Buscas</h2>
+      <div class="card mb-3 mt-3 ps-1 shadow bg-danger-subtle">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="./images/recent_search.webp" class="img-fluid rounded-start h-100 w-100" alt="">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <p class="text-muted card-text">
+                <i class="bi bi-ticket fs-4 mb-1 icon"></i>
+                Passeios
+              </p>
+              <h5 class="card-title border-bottom pb-3">Ingressos para o Universal Orlando Resort</h5>
+            </div>
+            <div class="btn-group" id="menu-hospedagem">
+              <input type="radio" name="servicos" id="btn-roteiro-viagem" checked />
+              <label for="btn-roteiro-viagem" class="btn-item">
+                <span>Ver Roteiro da viagem</span>
+              </label>
+
+              <input type="radio" name="servicos" id="btn-buscar" />
+              <label for="btn-buscar" class="btn-item">
+                <i class="bx bx-hotel"></i>
+                <span>Buscar</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pt-5">
+      <h2>Promoções incríveis para hoteís nos destinos mais buscados</h2>
+      <div class="d-flex flex-row gap-2">
+        <div class="card mt-3" style="height:42rem; width:24rem">
+          <img src="./images/card-image1.webp" class="image-fluid rounded-top" alt="">
+          <div class="card-body">
+            <p class="text-muted card-text">
+              Hospedagens
+            </p>
+            <h5 class="card-title border-bottom pb-3">Pousada Laguna Hotel</h5>
+            <p class="text-muted card-text small">A 4,20km do centro</p>
+            <p class="text-muted card-text">Estadia no Rio de Janeiro</p>
+
+            <div class="d-flex flex-row align-items-baseline gap-2 border-bottom pb-3">
+              <div class="card-text text-white">
+                <p class="w-0 bg-success p-1 rounded-1">7.3</p>
+              </div>
+              <div style="color: gold;">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <div class="ms-1">
+                <span class="text-muted">|</span>
+              </div>
+              <div class="fs-5">
+                <i class="bi bi-snow ms-2"></i>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO3TMUoDURSF4Q8LY+UG1HUI1hauyrS6BQXdQgSJYBU0S7BQ1C5aahGsRx7ckWRIxhnJxBDmhwPDPZd7eO++oeWf6aAX2lpW6BuygkbLOGmGa+xgF/2oJa8xehGSAnP2opa8STZxinfcz5lXpad28MnEKu4KXp2eqavuR3gKvZlz1flbOCjU6/b8MKr4uHKvjCo9U6Rf6Cqut1NxaFaihbIywbNY7+Cs3bGGgj9DZXzgdtHBC2OAZxxjH9uh9N3FS/jdP/qvGM4LzhrWcFbwBo5wjgeM8YVHXOAwdImn8H7zxzHrLGanjNVh0O7Yuu+4RZN8A7C3zQwG31K6AAAAAElFTkSuQmCC"
+                  alt="outdoor-swimming-pool--v1">
+                <i class="bi bi-wifi"></i>
+              </div>
+            </div>
+            <div class="d-flex flex-column pt-3">
+              <div class="text-3">
+                <small>1 noite, 2 pessoas a partir de </small>
+              </div>
+              <div>
+                <del class="text-body text-muted">R$ 365</del>
+              </div>
+              <div class="pt-2 d-flex flex-row align-items-baseline gap-1">
+                <div>
+                  <p>R$</p>
+                </div>
+                <div>
+                  <h3>332</h3>
+                </div>
+              </div>
+              <div class="text-muted text-2">
+                <p>Data de referência: 7 de junho de 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3" style="height:42rem; width:24rem">
+          <img src="./images/card-image2.webp" class="image-fluid rounded-top" alt="">
+          <div class="card-body">
+            <p class="text-muted card-text">
+              Hospedagens
+            </p>
+            <h5 class="card-title border-bottom pb-3">Búzios Beach Resort</h5>
+            <p class="text-muted card-text small">A 5,61km do centro</p>
+            <p class="text-muted card-text">Estadia em búzios</p>
+
+            <div class="d-flex flex-row align-items-baseline gap-2 border-bottom pb-3">
+              <div class="card-text text-white">
+                <p class="w-0 bg-success p-1 rounded-1">7.4</p>
+              </div>
+              <div style="color: gold;">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <div class="ms-1">
+                <span class="text-muted">|</span>
+              </div>
+              <div class="fs-5">
+                <i class="bi bi-snow ms-2"></i>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO3TMUoDURSF4Q8LY+UG1HUI1hauyrS6BQXdQgSJYBU0S7BQ1C5aahGsRx7ckWRIxhnJxBDmhwPDPZd7eO++oeWf6aAX2lpW6BuygkbLOGmGa+xgF/2oJa8xehGSAnP2opa8STZxinfcz5lXpad28MnEKu4KXp2eqavuR3gKvZlz1flbOCjU6/b8MKr4uHKvjCo9U6Rf6Cqut1NxaFaihbIywbNY7+Cs3bGGgj9DZXzgdtHBC2OAZxxjH9uh9N3FS/jdP/qvGM4LzhrWcFbwBo5wjgeM8YVHXOAwdImn8H7zxzHrLGanjNVh0O7Yuu+4RZN8A7C3zQwG31K6AAAAAElFTkSuQmCC"
+                  alt="outdoor-swimming-pool--v1">
+              </div>
+            </div>
+            <div class="d-flex flex-column pt-3">
+              <div class="text-3">
+                <small>1 noite, 2 pessoas a partir de </small>
+              </div>
+              <div>
+                <del class="text-body text-muted">R$ 898</del>
+              </div>
+              <div class="pt-2 d-flex flex-row align-items-baseline gap-1">
+                <div>
+                  <p>R$</p>
+                </div>
+                <div>
+                  <h3>548</h3>
+                </div>
+              </div>
+              <div class="text-muted text-2">
+                <p>Data de referência: 25 de abril de 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mt-3" style="height:42rem; width:24rem">
+          <img src="./images/card-image3.webp" class="image-fluid rounded-top" alt="">
+          <div class="card-body">
+            <p class="text-muted card-text">
+              Hospedagens
+            </p>
+            <h5 class="card-title border-bottom pb-3">Pousada Laguna Hotel</h5>
+            <p class="text-muted card-text small">A 4,20km do centro</p>
+            <p class="text-muted card-text">Estadia em Cabo Frio</p>
+
+            <div class="d-flex flex-row align-items-baseline gap-2 border-bottom pb-3">
+              <div class="card-text text-white">
+                <p class="w-0 bg-success p-1 rounded-1">7.7</p>
+              </div>
+              <div style="color: gold;">
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+                <i class="bi bi-star"></i>
+              </div>
+              <div class="ms-1">
+                <span class="text-muted">|</span>
+              </div>
+              <div class="fs-5">
+                <i class="bi bi-snow ms-2"></i>
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVR4nO3TMUoDURSF4Q8LY+UG1HUI1hauyrS6BQXdQgSJYBU0S7BQ1C5aahGsRx7ckWRIxhnJxBDmhwPDPZd7eO++oeWf6aAX2lpW6BuygkbLOGmGa+xgF/2oJa8xehGSAnP2opa8STZxinfcz5lXpad28MnEKu4KXp2eqavuR3gKvZlz1flbOCjU6/b8MKr4uHKvjCo9U6Rf6Cqut1NxaFaihbIywbNY7+Cs3bGGgj9DZXzgdtHBC2OAZxxjH9uh9N3FS/jdP/qvGM4LzhrWcFbwBo5wjgeM8YVHXOAwdImn8H7zxzHrLGanjNVh0O7Yuu+4RZN8A7C3zQwG31K6AAAAAElFTkSuQmCC"
+                  alt="outdoor-swimming-pool--v1">
+                <i class="bi bi-wifi"></i>
+              </div>
+            </div>
+            <div class="d-flex flex-column pt-3">
+              <div class="text-3">
+                <small>1 noite, 2 pessoas a partir de </small>
+              </div>
+              <div>
+                <del class="text-body text-muted">R$ 180</del>
+              </div>
+              <div class="pt-2 d-flex flex-row align-items-baseline gap-1">
+                <div>
+                  <p>R$</p>
+                </div>
+                <div>
+                  <h3>169</h3>
+                </div>
+              </div>
+              <div class="text-muted text-2">
+                <p>Data de referência: 7 de junho de 2026</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
   </main>
 
-  <footer>
-    <div></div>
-    <div></div>
+  <footer class="p-2">
+    <div class=" d-flex align-items-center justify-content-center flex-column gap-3 pb-2">
+      <div class="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+          <g fill="none" fill-rule="evenodd">
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M73.506 48.282v19.42H4.778V34.483m0 1.38v-9.187c0-1.54 1.327-2.787 2.964-2.787H52"></path>
+            <circle cx="70.472" cy="29.861" r="11.944" fill="#EEBCC1" fill-rule="nonzero"></circle>
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M69.875 17.917c-6.927 0-12.542 5.615-12.542 12.541C57.333 37.385 62.948 43 69.875 43s12.542-5.615 12.542-12.542">
+            </path> <text fill="#410062" font-family="Rubik-Bold, Rubik" font-size="13" font-weight="bold">
+              <tspan x="65.501" y="35.347">$</tspan>
+            </text>
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M39.527 49.352L5.972 33.444l33.555 15.908zM39.417 49.227l15.653-7.421-15.653 7.42z"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div>
+        <h3>Cadastre-se</h3>
+      </div>
+
+      <form class="bg-body-tertiary w-50 d-flex justify-content-center align-items-center ps-5 pb-5 row g-3">
+        <div class="col-6">
+          <label for="inputNome4" class="form-label">Nome</label>
+          <input type="name" class="form-control" id="inputName4">
+        </div>
+        <div class="col-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-6">
+          <label for="inputSenha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputSenha">
+        </div>
+        <div class="col-6">
+          <label for="inputEndereco" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputEndereco" placeholder="">
+        </div>
+        <div class="col-6">
+          <label for="inputEndereco2" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Bloco, apartamento...">
+        </div>
+        <div class="col-6">
+          <label for="inputCidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCidade">
+        </div>
+        <div class="col-4">
+          <label for="inputEstado" class="form-label">Estado</label>
+          <select name="inputEstado" id="estado">
+            <optgroup label="Estados Brasileiros">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Quero receber notícias
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </form>
+
+      <div class="w-100 d-flex justify-content-center align-content-center  border-top border-bottom pb-5  gap-5 p-5">
+        <div>
+          <i class="bi bi-facebook icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-instagram icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-twitter-x icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-youtube icon"></i>
+        </div>
+      </div>
+
+      <div class="border-bottom pb-5">
+        <div class="d-flex flex-row gap-5">
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Minha Conta</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Passaporte Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Meu Perfil</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Deletar minha conta</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Somos Horizon</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">FAQs</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Trabalhe na Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Contato com a imprensa</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Compra Segura</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Termos e condições</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Poílitca de privacidade</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Black Friday</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Oferta Uau</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Prevenção a fraudes</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Horizon ft. SHAKIRA</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Promova seu negócio</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Programa de franquias Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Anuncie sua propriedade</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Premium Connectivity Partner</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 text-body">
+        <p>&copy; Todos os diretos reservados Horizon</p>
+      </div>
   </footer>
 
   <script src="./js/index.js"></script>

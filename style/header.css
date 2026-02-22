@@ -38,7 +38,7 @@ header .header-top-link div a:hover {
 header .header-autosuggestion-links {
     height: 70px;
     padding: 5px;
-    background-color: var(--primary-color-light);
+    background: #ccb7fa;
     color: var(--primary-color);
 }
 

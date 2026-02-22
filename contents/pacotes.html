@@ -9,10 +9,11 @@
 
   <!-- Styles -->
 
-  <link rel="stylesheet" href="./style/style.css" />
-  <link rel="stylesheet" href="./style/header.css" />
-  <link rel="stylesheet" href="./style/side-bar.css" />
-  <link rel="stylesheet" href="./style/hospedagens.css">
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/header.css" />
+  <link rel="stylesheet" href="../style/side-bar.css" />
+  <link rel="stylesheet" href="../style/hospedagens.css">
+  <link rel="stylesheet" href="../style//media.css ">
 
   <!-- Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -24,7 +25,7 @@
 
 </head>
 
-<body id="pagina-hospedagens">
+<body>
 
   <nav class="side-bar shadow close open" id="nav-bar-click">
     <div class=" d-flex align-items-center border-bottom pb-3 mb-1">
@@ -57,9 +58,9 @@
         </li>
 
         <li>
-          <a href="#" class="nav-link">
+          <a href="../index.html" class="nav-link">
             <i class='bx bx-home-alt icon'></i>
-            <span class="text nav-text">Buscador</span>
+            <span class="text nav-text">Buscar hospedagens</span>
           </a>
         </li>
         <li>
@@ -69,13 +70,13 @@
           </a>
         </li>
         <li>
-          <a href="#" class="nav-link">
+          <a href="sobre_nos.html" class="nav-link">
             <i class='bx bxs-business icon'></i>
             <span class="text nav-text">Sobre nós</span>
           </a>
         </li>
         <li>
-          <a href="./contents/fale_conosco.html" class="nav-link">
+          <a href="fale_conosco.html" class="nav-link">
             <i class='bx bx-phone-call icon'></i>
             <span class="text nav-text">Fale conosco</span>
           </a>
@@ -89,13 +90,13 @@
             <span class="text nav-text">Sair</span>
           </a>
         </li>
-        <li class="mode">
+        <li class="mode d-none">
           <div class="moon-sun">
             <i class="bx bx-moon icon moon"></i>
             <i class="bx bx-sun icon sun"></i>
           </div>
 
-          <span class="mode-text text">Modo Escuro</span>
+          <span class="mode-text text"></span>
 
           <div class="toggle-switch">
             <span class="switch"></span>
@@ -106,16 +107,15 @@
   </nav>
 
   <header class="border-bottom d-flex flex-column">
-    <div class="header-top-link d-none d-lg-flex justify-content-between align-items-center">
+    <div class="header-top-link d-none d-lg-flex d-md-flex d-sm-flex justify-content-between align-items-center">
       <a class="header-logo navbar-brand fw-bold text-primary fs-3" href="#">Horizon</a>
       <div class="d-flex flex-row justify-content-center align-items-center">
         <div class="televendas-box d-flex justify-content-center align-items-center px-4 py-4 text-white">
-          <small class="text">Televendas <strong>0800 883 6342</strong></small>
+          <small>Televendas <strong>0800 883 6342</strong></small>
         </div>
 
-        <div
-          class="header-autosuggestion-links d-flex flex-row justify-content-center align-items-center text-10 gap-1">
-          <div class="d-flex justify-content-center gap-2">
+        <div class="header-autosuggestion-links d-flex flex-row justify-content-center align-items-center text-10">
+          <div class="d-flex justify-content-center">
             <a href="#" class="text-secondary text-decoration-none small">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house"
                 viewBox="0 0 16 16">
@@ -180,17 +180,17 @@
       </div>
     </div>
 
-    <div class="header-bottom-link d-flex align-items-baseline py-2 px-5">
+    <div class="header-bottom-link d-none d-lg-flex d-md-flex d-sm-flex align-items-baseline py-2 px-5">
       <ul class="nav d-flex ps-1 justify-content-center gap-5">
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="../index.html">
             <i class="bi bi-house-door fs-4 mb-1 icon"></i>
             <span class="text">Hospedagens</span>
           </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="./contents/passagens.html">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="passagens.html">
             <i class="bi bi-airplane fs-4 mb-1 icon"></i>
             <span class="text">Passagens</span>
           </a>
@@ -204,15 +204,15 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link d-flex flex-column align-items-center p-0" href="#">
+          <a class="nav-link d-flex flex-column align-items-center p-0" href="passeios.html">
             <i class="bi bi-ticket fs-4 mb-1 icon"></i>
             <span class="text">Passeios</span>
           </a>
         </li>
 
         <li class="nav-item pb-5">
-          <a class="nav-link d-flex flex-column align-items-center text-decoration-none" href="#">
-            <img class="fs-4 mb-1 icon" src="./fig/mickey-mouse-white-mode.png" alt="">
+          <a class="nav-link d-flex flex-column align-items-center text-decoration-none" href="disney.html">
+            <img class="fs-4 mb-1 icon" src="../fig/mickey-mouse-white-mode.png" alt="">
             <span class="text">Disney</span>
           </a>
         </li>
@@ -223,42 +223,215 @@
     <div class="container py-4">
       <div class="d-flex flex-row align-items-center gap-3">
         <h4 class="title">Hospedagens</h4>
-        <div class="btn-group navegacao">
-          <div>
-            <a href="" class="-active">
-              <span class="select-label">Todos</span>
-            </a>
-          </div>
-          <div>
-            <a href="" class="">
-              <i class="bi bi-building icon"></i>
-              <span>Hotéis</span>
-            </a>
-          </div>
-          <div>
-            <a href="" class="">
-              <i class="bi bi-house-dash icon"></i>
-              <span>Alugueis por temporada</span>
-            </a>
-          </div>
+        <div class="btn-group" id="menu-hospedagem">
+          <input type="radio" name="servicos" id="btn-todos-servicos" checked />
+          <label for="btn-todos-servicos" class="btn-item">
+            <span>Todos</span>
+          </label>
+
+          <input type="radio" name="servicos" id="btn-passagens" />
+          <label for="btn-passagens" class="btn-item">
+            <i class="bx bx-hotel"></i>
+            <span>Hotéis</span>
+          </label>
+
+          <input type="radio" name="servicos" id="btn-alugueis" />
+          <label for="btn-alugueis" class="btn-item">
+            <i class="bx bx-building-house icon"></i>
+            <span>Alugueis por temporada</span>
+          </label>
         </div>
-      </div>
-      <div class="d-flex py-4">
-        <button class="button-select" type="button" aria-haspopup="listbox" aria-expanded="false"
-          aria-controls="select_list">
-        </button>
       </div>
     </div>
   </div>
 
-  <main class="">
-    <div></div>
-    <div></div>
+  <main class="p-5">
+
   </main>
 
-  <footer>
-    <div></div>
-    <div></div>
+  <footer class="p-2">
+    <div class=" d-flex align-items-center justify-content-center flex-column gap-3 pb-2">
+      <div class="">
+        <svg xmlns="http://www.w3.org/2000/svg" width="86" height="86" viewBox="0 0 86 86">
+          <g fill="none" fill-rule="evenodd">
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M73.506 48.282v19.42H4.778V34.483m0 1.38v-9.187c0-1.54 1.327-2.787 2.964-2.787H52"></path>
+            <circle cx="70.472" cy="29.861" r="11.944" fill="#EEBCC1" fill-rule="nonzero"></circle>
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M69.875 17.917c-6.927 0-12.542 5.615-12.542 12.541C57.333 37.385 62.948 43 69.875 43s12.542-5.615 12.542-12.542">
+            </path> <text fill="#410062" font-family="Rubik-Bold, Rubik" font-size="13" font-weight="bold">
+              <tspan x="65.501" y="35.347">$</tspan>
+            </text>
+            <path stroke="#410062" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+              d="M39.527 49.352L5.972 33.444l33.555 15.908zM39.417 49.227l15.653-7.421-15.653 7.42z"></path>
+          </g>
+        </svg>
+      </div>
+
+      <div>
+        <h3>Cadastre-se</h3>
+      </div>
+
+      <form class="bg-body-tertiary w-50 d-flex justify-content-center align-items-center ps-5 pb-5 row g-3">
+        <div class="col-6">
+          <label for="inputNome4" class="form-label">Nome</label>
+          <input type="name" class="form-control" id="inputName4">
+        </div>
+        <div class="col-6">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input type="email" class="form-control" id="inputEmail4">
+        </div>
+        <div class="col-6">
+          <label for="inputSenha" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="inputSenha">
+        </div>
+        <div class="col-6">
+          <label for="inputEndereco" class="form-label">Endereço</label>
+          <input type="text" class="form-control" id="inputEndereco" placeholder="">
+        </div>
+        <div class="col-6">
+          <label for="inputEndereco2" class="form-label">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Bloco, apartamento...">
+        </div>
+        <div class="col-6">
+          <label for="inputCidade" class="form-label">Cidade</label>
+          <input type="text" class="form-control" id="inputCidade">
+        </div>
+        <div class="col-4">
+          <label for="inputEstado" class="form-label">Estado</label>
+          <select name="inputEstado" id="estado">
+            <optgroup label="Estados Brasileiros">
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="DF">Distrito Federal</option>
+              <option value="ES">Espírito Santo</option>
+              <option value="GO">Goiás</option>
+              <option value="MA">Maranhão</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="PA">Pará</option>
+              <option value="PB">Paraíba</option>
+              <option value="PR">Paraná</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="SC">Santa Catarina</option>
+              <option value="SP">São Paulo</option>
+              <option value="SE">Sergipe</option>
+              <option value="TO">Tocantins</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Quero receber notícias
+            </label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary">Entrar</button>
+        </div>
+      </form>
+
+      <div class="w-100 d-flex justify-content-center align-content-center  border-top border-bottom pb-5  gap-5 p-5">
+        <div>
+          <i class="bi bi-facebook icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-instagram icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-twitter-x icon"></i>
+        </div>
+        <div>
+          <i class="bi bi-youtube icon"></i>
+        </div>
+      </div>
+      
+      <div class="border-bottom pb-5">
+        <div class="d-flex flex-row gap-5">
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Minha Conta</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Passaporte Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Meu Perfil</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Deletar minha conta</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Somos Horizon</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">FAQs</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Trabalhe na Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Contato com a imprensa</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Compra Segura</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Termos e condições</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Poílitca de privacidade</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Black Friday</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Oferta Uau</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Prevenção a fraudes</a>
+            </div>
+            <div>
+              <a href="" class="text-decoration-none text-body">Horizon ft. SHAKIRA</a>
+            </div>
+          </div>
+          <div class="d-flex flex-column align-items-center gap-2">
+            <div>
+              <b><a class="text-decoration-none text-body text-muted" href="">Promova seu negócio</a></b>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Programa de franquias Decolar</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Anuncie sua propriedade</a>
+            </div>
+            <div>
+              <a class="text-decoration-none text-body" href="">Premium Connectivity Partner</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-5 text-body">
+        <p>&copy; Todos os diretos reservados Horizon</p>
+      </div>
   </footer>
 
   <script src="./js/index.js"></script>
@@ -269,6 +442,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
     integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
 </body>
 
 </html>

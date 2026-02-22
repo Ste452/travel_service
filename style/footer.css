@@ -1,0 +1,13 @@
+footer {
+  padding: 20px !important;
+  background-color: #f1f2f3;
+}
+
+footer .d-flex {
+  flex-direction: column !important; /* Empilha os campos de cadastro */
+  gap: 10px;
+}
+
+footer input, footer textarea, footer select {
+  width: 100% !important;
+}

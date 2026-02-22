@@ -1,5 +1,69 @@
-@media screen and (orientation: portrait) {
+/* Foco em telas pequenas (Mobile First ou Max-width) */
+@media (max-width: 768px) {
+  header {
+    height: auto !important; /* Libera a altura fixa que estava no seu style.css */
+    padding: 10px 0;
+  }
 
-    
+  /* Esconde a barra de links inferior do header no mobile */
+  .header-bottom-link {
+    display: none !important;
+  }
 
+  /* Faz a logo ficar centralizada no mobile */
+  .header-logo {
+    padding-left: 0 !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .hospedagens .container > div {
+    flex-direction: column !important; /* Empilha o título 'Hospedagens' e os botões */
+    align-items: flex-start !important;
+  }
+
+  .btn-group {
+    display: flex;
+    flex-wrap: nowrap; /* Impede a quebra de linha */
+    overflow-x: auto;  /* Permite scroll lateral se não couber */
+    width: 100%;
+    padding-bottom: 10px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .btn-item {
+    white-space: nowrap; /* Garante que o texto do botão não quebre */
+    flex-shrink: 0;      /* Impede que o botão esmague */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Alinha os cards um embaixo do outro */
+  .card {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+    padding: 0 15px !important;
+  }
+
+  .card {
+    width: 100% !important; /* Card ocupa a largura total da tela */
+    height: auto !important;
+    margin-bottom: 15px;
+  }
+
+  /* Ajusta as imagens do carrossel para não ficarem achatadas */
+  .carousel-item img {
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  /* Ajusta a seção "Últimas buscas" */
+  section.w-50 {
+    width: 90% !important; /* De 50% para 90% para caber no celular */
+    margin: 0 auto;
+  }
 }
